@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tsicareer</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <div class="flash_notice">
+   <% if !flash[:notice].blank?%>
+      <div class="alert alert-success flash_div">
+        <%= flash[:notice]%>
+      </div>
+    <%end%>
+</div>
+  <body>
+    <%= yield %>
+  </body>
+</html>

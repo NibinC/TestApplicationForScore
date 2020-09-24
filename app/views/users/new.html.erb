@@ -1,0 +1,24 @@
+<div id="con">
+<div class="container-fluid p-3 bg-dark text-white ">
+	<h1 align="center">My Test Application</h1>
+
+		
+</div>
+<div>
+
+</div>
+
+<div class="container">
+	<h2 align="center">Sign Up </h2>
+ <%= form_for(@user) do |f|%>
+  <%= render(:partial=>'form',:locals=>{:f=>f})%>
+  <div class="justify-content-center" align="center">
+		<%=f.submit("Create")%>
+  </div>
+	 	
+<% end%>
+</div>
+<footer id="footer">
+  <div id="footer-content foo">c.nibi123@gmail.com</div>
+</footer>
+</div>	

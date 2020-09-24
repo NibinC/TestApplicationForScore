@@ -1,0 +1,40 @@
+<div>
+	
+<div class="container-fluid p-3 bg-dark text-white">
+	<h1 align="center">My Test Application</h1>
+<div class="container admin_color" align="right">Logged in as :<%=session[:username]%>  </div>
+</div>
+	<div class="container adm">
+		<h2 align="center"> Menu</h2>
+	
+		
+		<table class="table table-hover ">
+		<tr align="center">
+		   <td>
+			<%= link_to("List Players",manageplayers_path)%></td></tr>
+		
+		<tr align="center"><td>
+			<%= link_to("Sort Players by Tot Rushing Yards",manageplayers_sort_by_tot_rushing_yards_path)%></td></tr>
+		
+		<tr align="center"><td>
+			<%= link_to("Sort Players by Longest Rush",manageplayers_sort_by_tot_longest_rush_path)%></td></tr>
+
+		<tr align="center"><td>
+			<%= link_to("Sort Players by Tot Rushing Tochdowns",manageplayers_sort_by_tot_rushing_touch_downs_path)%></td></tr>
+		<tr align="center"><td>
+			<%= link_to("Sort Players by Above Three",manageplayers_sort_by_all_three_path)%></td></tr>
+		<tr align="center"><td>
+			<%= link_to("Show User Profile",:controller=>'users',:action=>'show')%>
+		</td></tr>
+		 <tr align="center"><td>
+			<%= link_to("Logout",access_logout_path)%>
+		</td></tr>
+		</table>
+		
+	 </div>
+
+
+<footer id="footer">
+ <div id="footer-content foo">c.nibi123@gmail.com</div>
+</footer>
+</div>
